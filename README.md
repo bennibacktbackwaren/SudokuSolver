@@ -10,11 +10,9 @@ You can find a pre-built executable for Windows in the bin folder.
 
 The usage is quite intuitive. The cursor is controlled with the classic HJKL control of vi. With the corresponding number keys (1-9) you set the value of a field, with the 0 you delete a field.
 
-* 'F4' simplifies the field using the Exact Cover method. Attention: In some cases (with very simple Sudokus) the whole game is solved by simplifying.
-* 'F5' solves the Sudoku by backtracking with Brute Force.
-* 'F6' clears the field.
-
-Translated with www.DeepL.com/Translator (free version)
+* `F4` simplifies the field using the Exact Cover method. Attention: In some cases (with very simple Sudokus) the whole game is solved by simplifying.
+* `F5` solves the Sudoku by backtracking with Brute Force.
+* `F6` clears the field.
 
 ## Building
 
