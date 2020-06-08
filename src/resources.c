@@ -27,9 +27,14 @@ bool resourcesLoad(float diagonalScalingFactor) {
         return false;
     }
 
-    // Open the font with a small size
-    smallFont = TTF_OpenFont("./SourceSansPro-Regular.ttf",
-                             (int)(14 * diagonalScalingFactor));
+    // Get the applications base path
+    char *fontPath = SDL_GetBasePath();
+    // Alloc space for the font name
+    fontPath = (char *)realloc(fontPath, strlen(fontPath) + 25 + 1);
+    // Append the font name
+    strcat(fontPath, "SourceSansPro-Regular.ttf");
+
+    smallFont = TTF_OpenFont(fontPath, (int)(14 * diagonalScalingFactor));
     if(smallFont == NULL) {
         applicationDisplayError(TTF_GetError());
         return false;
@@ -38,15 +43,17 @@ bool resourcesLoad(float diagonalScalingFactor) {
     TTF_SetFontHinting(smallFont, TTF_HINTING_LIGHT);
 
     // Open the font with a large size
-    largeFont = TTF_OpenFont("./SourceSansPro-Regular.ttf",
-                             (int)(16 * diagonalScalingFactor));
+    largeFont = TTF_OpenFont(fontPath, (int)(16 * diagonalScalingFactor));
     if(largeFont == NULL) {
         TTF_CloseFont(smallFont);
         applicationDisplayError(TTF_GetError());
         return false;
     }
 
+    // Clean up
+    free(fontPath);
     wasInit = true;
+
     return true;
 }
 
