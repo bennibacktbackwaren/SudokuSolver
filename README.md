@@ -2,7 +2,7 @@
 
 Version 1.0
 
-SudokuSolver is a simple program with intuitive handling to solve classic 9x9 Sudokus. It is written in C99 using SDL2 and SDL2_ttf, renders hardware
+SudokuSolver is a simple program with intuitive handling to solve classic 9x9 Sudokus. It is written in C99 using SDL2 2.0.10 and SDL2_ttf, renders hardware
 accelerated, and runs on all three major platforms. Furthermore SudokuSolver is compatible with high DPI screens.
 You can find a pre-built executable for Windows in the bin folder.
 
@@ -29,7 +29,7 @@ The usage is quite intuitive. The cursor is controlled with the classic HJKL con
 
 #### Linux
 
-To compile the project you need to install a usable toolchain with GCC and make. Furthermore the libraries SDL2 and SDL2_ttf and their dependencies are needed. Then simply call make in the project folder.
+To compile the project you need to install a usable toolchain with GCC and make. Furthermore the libraries SDL2 and SDL2_ttf and their dependencies are needed. Then simply call ```make``` in the project folder.
 
 #### Windows (using MSYS2)
 
@@ -60,7 +60,7 @@ Portions of this software are copyright © 2020 The FreeType Project (https://ww
 
 #### SourceSansPro
 
-Copyright 2010, 2012, 2014 Adobe Systems Incorporated (https://www.adobe.com/), with Reserved Font Name ‘Source’. The full _Open Font License_ can be found in the bin folder.
+Copyright 2010, 2012, 2014 Adobe Systems Incorporated (https://www.adobe.com/), with Reserved Font Name ‘Source’. The full Open Font License can be found in the bin folder.
 
 ## Credits
 
