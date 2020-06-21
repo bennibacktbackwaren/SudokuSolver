@@ -4,7 +4,7 @@ Version 1.0
 
 SudokuSolver is a simple program with intuitive handling to solve classic 9x9 Sudokus. It is written in C99 using SDL2 2.0.10 and SDL2_ttf, renders hardware
 accelerated, and runs on all three major platforms. Furthermore SudokuSolver is compatible with high DPI screens.
-You can find a pre-built executable for Windows in the bin folder.
+You can find a pre-built executable for Windows x64 in the bin folder.
 
 ##### Table of contents
 * [Introduction](#sudokusolver)
